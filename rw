@@ -189,7 +189,7 @@ function Update:Window(text,logo,keybind)
 	Hubb.Position = UDim2.new(0, 480, 0, 0)
 	Hubb.Size = UDim2.new(0, 81, 0, 27)
 	Hubb.Font = Enum.Font.GothamSemibold
-	Hubb.Text = "         Versão : Gratis"
+	Hubb.Text = "         English"
 	spawn(function()
             while wait() do
                 pcall(function()
@@ -3608,7 +3608,7 @@ getgenv().ToTargets = function(p)
 
 print("Load Script")
 
-local Library = Update:Window("HygorL ","Ver : RgbTex",Enum.KeyCode.RightControl);
+local Library = Update:Window("Codex ","Ver : RgbTex",Enum.KeyCode.RightControl);
 
 local H = Library:AddTab("Home","6026568198")
 local Main = Library:AddTab("Level Farm","13075651575")
@@ -3626,17 +3626,17 @@ local TES = Library:AddTab("Nothing Here","")
 local Time = H:AddLabel("Executor Time");spawn(function() getgenv().Time = true;while true do wait(.1) UpdateTime() end end);function UpdateTime() local date = os.date("*t");local hour = (date.hour) % 24;local ampm = hour < 12 and "AM" or "PM";local timezone = string.format("%02i:%02i:%02i %s", ((hour -1) % 12) + 1, date.min, date.sec, ampm);local datetime = string.format("%02d/%02d/%04d", date.day, date.month, date.year);local LocalizationService = game:GetService("LocalizationService");local Players = game:GetService("Players");local player = Players.LocalPlayer;local name = player.Name;local result, code = pcall(function()   return LocalizationService:GetCountryRegionForPlayerAsync(player)  end);Time:Set(" : " .. timezone);Time:Set("Executor Time: " .. datetime .. " [ " .. code .. " ]");spawn(function() if getgenv().Time then pcall(function()  while wait() do  Time()  end end) end end) end
 
 H:AddLabel("Script PC/Mobile")
-H:AddLabel("Bem Vindo Ao HygorL Hub")
+H:AddLabel("Codex")
 
 H:AddSeperator("Credit")
 
 
 H:AddButton("clique aqui e cole",function()
-setclipboard("hygorl lindo")
+setclipboard("codex")
 end)
 
 H:AddButton("Discord ScriptersGold",function()
-setclipboard("discord.gg/scriptersgold")
+setclipboard("discord.gg/robloxscripts")
 end)
 
 H:AddLine()
@@ -7348,7 +7348,6 @@ end
         StopTween(_G.AutoSwordMastery)
     end)
     
-    --HygorL_Auto_Sword_Mastery
     spawn(function()
         pcall(function()
             while wait() do
@@ -14590,14 +14589,8 @@ print("Carregado com sucesso!")
 
 game.StarterGui:SetCore("SendNotification", {
       Icon = "http://www.roblox.com/asset/?id=12523036534";
-      Title = "Hysoal Hub Free", 
-      Text = "Bem vindo! Aproveite nosso script";
-})
-wait(3)
-game.StarterGui:SetCore("SendNotification", {
-      Icon = "http://www.roblox.com/asset/?id=12523036534";
-      Title = "HygorL Hub", 
-      Text = "Feito por HygorL e HashishX";
+      Title = "CodeX", 
+      Text = "Thank you for using Codex";
 })
 
    
