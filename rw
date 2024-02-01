@@ -176,7 +176,7 @@ function Update:Window(text,logo,keybind)
 	Hub.Position = UDim2.new(0, 85, 0, 0)
 	Hub.Size = UDim2.new(0, 81, 0, 27)
 	Hub.Font = Enum.Font.GothamSemibold
-	Hub.Text = " HUB"
+	Hub.Text = ""
 	Hub.TextColor3 = Color3.fromRGB(7, 236, 240)
 	Hub.TextSize = 17.000
 	Hub.TextXAlignment = Enum.TextXAlignment.Left
@@ -3631,12 +3631,12 @@ H:AddLabel("Codex")
 H:AddSeperator("Credit")
 
 
-H:AddButton("clique aqui e cole",function()
+H:AddButton("Copy Hub Name",function()
 setclipboard("Codex")
 end)
 
-H:AddButton("Discord ScriptersGold",function()
-setclipboard("discord.gg/scriptersgold")
+H:AddButton("Discord CodeX",function()
+setclipboard("discord.gg/robloxexploits")
 end)
 
 H:AddLine()
