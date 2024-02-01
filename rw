@@ -3626,17 +3626,17 @@ local TES = Library:AddTab("Nothing Here","")
 local Time = H:AddLabel("Executor Time");spawn(function() getgenv().Time = true;while true do wait(.1) UpdateTime() end end);function UpdateTime() local date = os.date("*t");local hour = (date.hour) % 24;local ampm = hour < 12 and "AM" or "PM";local timezone = string.format("%02i:%02i:%02i %s", ((hour -1) % 12) + 1, date.min, date.sec, ampm);local datetime = string.format("%02d/%02d/%04d", date.day, date.month, date.year);local LocalizationService = game:GetService("LocalizationService");local Players = game:GetService("Players");local player = Players.LocalPlayer;local name = player.Name;local result, code = pcall(function()   return LocalizationService:GetCountryRegionForPlayerAsync(player)  end);Time:Set(" : " .. timezone);Time:Set("Executor Time: " .. datetime .. " [ " .. code .. " ]");spawn(function() if getgenv().Time then pcall(function()  while wait() do  Time()  end end) end end) end
 
 H:AddLabel("Script PC/Mobile")
-H:AddLabel("Codex - Blox Fruits")
+H:AddLabel("Bem Vindo Ao HygorL Hub")
 
 H:AddSeperator("Credit")
 
 
-H:AddButton("Copy hub name",function()
-setclipboard("codex")
+H:AddButton("clique aqui e cole",function()
+setclipboard("hygorl lindo")
 end)
 
-H:AddButton("Discord Robloxscripts",function()
-setclipboard("discord.gg/robloxscripts")
+H:AddButton("Discord ScriptersGold",function()
+setclipboard("discord.gg/scriptersgold")
 end)
 
 H:AddLine()
@@ -7348,7 +7348,7 @@ end
         StopTween(_G.AutoSwordMastery)
     end)
     
-    --codex_Auto_Sword_Mastery
+    --HygorL_Auto_Sword_Mastery
     spawn(function()
         pcall(function()
             while wait() do
@@ -14588,11 +14588,16 @@ spawn(function()
 
 print("Carregado com sucesso!")
 
-
 game.StarterGui:SetCore("SendNotification", {
       Icon = "http://www.roblox.com/asset/?id=12523036534";
-      Title = "Codex", 
-      Text = "Thank you for using Codex";
+      Title = "Hysoal Hub Free", 
+      Text = "Bem vindo! Aproveite nosso script";
+})
+wait(3)
+game.StarterGui:SetCore("SendNotification", {
+      Icon = "http://www.roblox.com/asset/?id=12523036534";
+      Title = "HygorL Hub", 
+      Text = "Feito por HygorL e HashishX";
 })
 
    
