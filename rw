@@ -189,7 +189,7 @@ function Update:Window(text,logo,keybind)
 	Hubb.Position = UDim2.new(0, 480, 0, 0)
 	Hubb.Size = UDim2.new(0, 81, 0, 27)
 	Hubb.Font = Enum.Font.GothamSemibold
-	Hubb.Text = "         Versão : Gratis"
+	Hubb.Text = "         Language : English"
 	spawn(function()
             while wait() do
                 pcall(function()
@@ -3608,7 +3608,7 @@ getgenv().ToTargets = function(p)
 
 print("Load Script")
 
-local Library = Update:Window("HygorL ","Ver : RgbTex",Enum.KeyCode.RightControl);
+local Library = Update:Window("Codex - BloxFruits ","Ver : RgbTex",Enum.KeyCode.RightControl);
 
 local H = Library:AddTab("Home","6026568198")
 local Main = Library:AddTab("Level Farm","13075651575")
